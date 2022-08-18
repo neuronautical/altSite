@@ -19,13 +19,15 @@ body {
 }
     
 .userData {
-    padding-top: 650px;
+    padding-top: 30%;
     position: relative;
     display: grid;
     place-items: center;
 }
   
 .userData > input {
+    display: grid;
+    place-items: center;
     padding: 20px;
     grid-column: 1;
     min-width: 300px;
