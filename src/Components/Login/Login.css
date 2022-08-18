@@ -55,3 +55,19 @@ body {
 .userData > button:hover {
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 380px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+@media screen and (min-width: 580px) {
+    body {
+      background-color: red;
+    }
+  }
+@media screen and (min-width: 780px) {
+    body {
+      background-color: blue;
+    }
+  }
