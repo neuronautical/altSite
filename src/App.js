@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
+import Login from './Components/Login/Login';
+import Profile from './Components/Profile/Profile';
+import { LoginContext } from './Contexts/LoginContext';
+
 function App() {
+
+
+  // Creating values in parent (app) so child components can access them
+  const [showProfile, setShowProfile] = useState(false);
+  const [username, setUsername] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      
+      {/* Wrapper (LoginContext) that  allows for desired values to be access by child components */}
+      <LoginContext.Provider value={{username, setUsername, setShowProfile}}>
+        {showProfile ? <Profile /> : <Login  />}
+      </LoginContext.Provider>
+
+      
     </div>
   );
 }

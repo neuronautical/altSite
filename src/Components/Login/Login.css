@@ -1,0 +1,55 @@
+body::-webkit-scrollbar {
+    /* display: none; */
+}
+
+body {
+    background-color: black;
+}
+
+.submitData {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../imgs/BG-GIF1.gif");
+    background-position: center -50px;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    overflow: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+    
+.userData {
+    padding-top: 650px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+  
+.userData > input {
+    padding: 20px;
+    grid-column: 1;
+    min-width: 300px;
+    max-width: 600px;
+    max-height: 5px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 15px;
+    outline: none;
+}
+  
+.userData > button { 
+    min-width: 300px;
+    max-width: 600px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #D8DADB;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 50ms ease-in-out;
+}
+
+.userData > button:hover {
+    transform: scale(1.2);
+}
