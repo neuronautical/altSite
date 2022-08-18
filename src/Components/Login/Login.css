@@ -71,3 +71,15 @@ body {
       background-color: blue;
     }
   }
+
+  @media screen and (min-width: 980px) {
+    body {
+      background-color: purple;
+    }
+  }
+
+  @media screen and (min-width: 1150px) {
+    body {
+      background-color: black;
+    }
+  }
